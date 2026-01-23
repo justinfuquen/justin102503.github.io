@@ -3,78 +3,166 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Justin's About Me</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <style>
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    th, td {
-      border: 1px solid black;
-      padding: 8px;
-      text-align: left;
-    }
-  </style>
+  <title>Justin Fuquen | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">My Website</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="lab3.html">Lab 3</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="lab4.html">Lab 4</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="lab5.html">Lab 5</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="lab6.html">Lab 6</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="FinalProject.html">Final Project</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.linkedin.com/in/justin-fuquen-b87026245" target="_blank">LinkedIn</a>
-          </li>
-        </ul>
+<header class="topbar">
+  <a class="brand-link" href="#home">
+    <span class="brand-icon"><i class="fa-solid fa-house"></i></span>
+    <span class="brand-text">Justin Fuquen</span>
+  </a>
+
+  <div class="top-actions">
+    <a class="icon-link" href="mailto:youremail@example.com"><i class="fa-regular fa-envelope"></i></a>
+    <a class="icon-link" href="https://github.com/YOURUSERNAME" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a class="icon-link" href="https://www.linkedin.com/in/justin-fuquen-b87026245" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+  </div>
+</header>
+
+<main id="home" class="layout">
+
+<section class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Computer Science • Cybersecurity</p>
+
+    <h1 class="headline">
+      Hey, I’m <span class="accent">Justin</span><br>
+      Fuquen<span class="dot">.</span>
+    </h1>
+
+    <p class="subhead">
+      Computer Science student pursuing cybersecurity internships.
+      Focused on SOC operations, security fundamentals, and hands-on labs.
+    </p>
+
+    <div class="pill-row">
+      <span class="pill">Cybersecurity</span>
+      <span class="pill">SIEM</span>
+      <span class="pill">Networking</span>
+      <span class="pill">Windows</span>
+      <span class="pill">Python</span>
+    </div>
+
+    <div class="cta-row">
+      <a class="btn primary" href="Justin_Fuquen_Resume.pdf" download>
+        <i class="fa-solid fa-download"></i> Download Resume
+      </a>
+      <a class="btn ghost" href="#projects">View Projects</a>
+    </div>
+
+    <div class="photo-card">
+      <div class="photo">
+        <img src="headshot.jpg" alt="Justin Fuquen">
+      </div>
+      <div>
+        <p class="photo-name">Justin Fuquen</p>
+        <p class="photo-role">CS Student • Cybersecurity</p>
       </div>
     </div>
-  </nav>
 
-  <div class="container mt-4">
-    <h1>Justin's About Me</h1>
+    <div class="side-nav">
+      <a href="#about" class="side-link">About</a>
+      <a href="#experience" class="side-link">Experience</a>
+      <a href="#projects" class="side-link">Projects</a>
+      <a href="#skills" class="side-link">Skills</a>
+    </div>
+  </div>
+</section>
 
-    <h2>Introduction</h2>
-    <p>My name is Justin Fuquen, I'm 21 years old and I am taking CSC 225 in my senior year of college and majoring in computer science. After college, I'm looking to pursue a career in cybersecurity. Some coding languages I have at least a base-level understanding of are C++, C#, and Python. In CSC 225, I'm learning how to use HTML and how it is used to structure a webpage. The knowledge that I learn about web development from this class can be used to create my own website in order to network in the tech industry.</p>
+<section class="content">
 
-    <h2>Important Classes I've Taken</h2>
+<section id="about" class="card">
+  <h2>About</h2>
+  <p>
+    I am a Computer Science student majoring in CS and pursuing a career in cybersecurity.
+    I enjoy building hands-on projects involving security concepts, networking,
+    and system analysis. I am currently gaining experience through academic labs
+    and self-guided projects.
+  </p>
+
+  <div class="mini-grid">
+    <div class="mini"><strong>Location:</strong> New York, NY</div>
+    <div class="mini"><strong>Graduation:</strong> December 2026</div>
+    <div class="mini"><strong>Focus:</strong> SOC & Blue Team</div>
+  </div>
+</section>
+
+<section id="experience" class="card">
+  <h2>Professional Experience</h2>
+
+  <div class="item">
+    <h3>IT / Technical Support (Academic & Personal)</h3>
+    <p class="item-meta">2024 – Present</p>
     <ul>
-      <li>Data Structures & Algorithms</li>
-      <li>Operating Systems</li>
-      <li>Discrete Mathematics</li>
+      <li>Troubleshot Windows and software issues.</li>
+      <li>Worked with networking fundamentals and system configurations.</li>
+      <li>Documented technical processes and solutions.</li>
     </ul>
+  </div>
+</section>
 
-    <h2>More Information</h2>
-    <p>Connect with me on <a href="https://www.linkedin.com/in/justin-fuquen-b87026245" target="_blank">LinkedIn</a>.</p>
+<section id="projects" class="card">
+  <h2>Projects</h2>
 
-    <img src="https://eu-images.contentstack.com/v3/assets/blt69509c9116440be8/blt8ffb90a2f64bacfa/6776f4544b281ca5e2bc465a/cybersecurity_NicoElNino-AlamyStockPhoto.jpg" alt="Cybersecurity Image" class="img-fluid rounded" width="400" />
-
-    <hr />
-    <p>Author: Justin Fuquen | Date: <script>document.write(new Date().toDateString());</script></p>
+  <div class="project">
+    <h3>Web Development Labs (CSC 225)</h3>
+    <p>
+      A collection of academic web development labs built using HTML, CSS, and Bootstrap.
+      These labs demonstrate page structure, navigation, styling, and responsive design.
+    </p>
+    <div class="project-links">
+      <a href="lab3.html">Lab 3</a>
+      <a href="lab4.html">Lab 4</a>
+      <a href="lab5.html">Lab 5</a>
+      <a href="lab6.html">Lab 6</a>
+      <a href="FinalProject.html">Final Project</a>
+    </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <div class="project">
+    <h3>Personal Portfolio Website</h3>
+    <p>
+      Designed and deployed a personal portfolio website using HTML and CSS,
+      hosted on Netlify and version-controlled with GitHub.
+    </p>
+    <div class="project-links">
+      <a href="https://github.com/YOURUSERNAME">GitHub Repo</a>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="card">
+  <h2>Skills</h2>
+
+  <div class="pill-row">
+    <span class="pill">HTML</span>
+    <span class="pill">CSS</span>
+    <span class="pill">Python</span>
+    <span class="pill">C++</span>
+    <span class="pill">C#</span>
+    <span class="pill">GitHub</span>
+    <span class="pill">Windows</span>
+    <span class="pill">Networking</span>
+    <span class="pill">Cybersecurity Fundamentals</span>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Justin Fuquen</p>
+</footer>
+
+</section>
+</main>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
