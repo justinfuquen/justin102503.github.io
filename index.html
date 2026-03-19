@@ -18,13 +18,13 @@
     </a>
 
     <div class="top-actions">
-      <a class="icon-link" href="mailto:justinf102503@gmail.com">
+      <a class="icon-link" href="mailto:justinf102503@gmail.com" aria-label="Email">
         <i class="fa-regular fa-envelope"></i>
       </a>
-      <a class="icon-link" href="https://github.com/justinfuquen" target="_blank">
+      <a class="icon-link" href="https://github.com/justinfuquen" target="_blank" rel="noreferrer" aria-label="GitHub">
         <i class="fa-brands fa-github"></i>
       </a>
-      <a class="icon-link" href="https://www.linkedin.com/in/justin-fuquen-b87026245" target="_blank">
+      <a class="icon-link" href="https://www.linkedin.com/in/justin-fuquen-b87026245" target="_blank" rel="noreferrer" aria-label="LinkedIn">
         <i class="fa-brands fa-linkedin-in"></i>
       </a>
     </div>
@@ -45,13 +45,14 @@
           in IT support, networking, and security fundamentals.
         </p>
 
+        <!-- UPDATED PILL ROW -->
         <div class="pill-row">
           <span class="pill">Help Desk</span>
           <span class="pill">Networking</span>
           <span class="pill">SIEM (Splunk)</span>
           <span class="pill">Wireshark</span>
           <span class="pill">Nmap</span>
-          <span class="pill">Top 20 SANS CTF</span>
+          <span class="pill">Top 20 – SANS AWS CTF</span>
         </div>
 
         <div class="cta-row">
@@ -87,7 +88,6 @@
     </section>
 
     <section class="content">
-
       <section id="about" class="card">
         <h2>About</h2>
         <p>
@@ -95,24 +95,34 @@
           expected to graduate in December 2026. I am interested in cybersecurity and IT, with experience
           in technical support, networking, and security fundamentals through coursework and hands on projects.
         </p>
+        <p>
+          I enjoy applying what I learn through practical labs and real world problem solving, and I am
+          focused on building skills that translate directly to entry level cybersecurity roles.
+        </p>
       </section>
 
       <section id="education" class="card">
         <h2>Education</h2>
-        <p><strong>CUNY College of Staten Island</strong></p>
+        <p><strong>City University of New York, College of Staten Island</strong></p>
         <p>Bachelor of Science in Computer Science</p>
         <p>Expected December 2026</p>
       </section>
 
       <section id="experience" class="card">
         <h2>Professional Experience</h2>
+
         <div class="item">
-          <h3>Help Desk Analyst</h3>
-          <p>College of Staten Island • Aug 2024 – Dec 2024</p>
+          <div class="item-head">
+            <h3>Help Desk Analyst</h3>
+            <span class="item-meta">
+              Office of Information Technology, College of Staten Island • Staten Island, NY • Aug 2024 – Dec 2024
+            </span>
+          </div>
           <ul class="bullets">
-            <li>Provided technical support for hardware, software, and network issues.</li>
-            <li>Managed ticketing systems and resolved incidents efficiently.</li>
-            <li>Educated users on security best practices and safe computing.</li>
+            <li>Provided technical support to students, faculty, and staff, troubleshooting hardware, software, and network connectivity issues.</li>
+            <li>Managed ticketing systems to track and resolve incidents while ensuring timely and effective customer service.</li>
+            <li>Educated users on IT security best practices including password management, phishing prevention, and safe computing techniques.</li>
+            <li>Collaborated with senior IT staff to implement system updates, optimize workflows, and improve help desk operations.</li>
           </ul>
         </div>
       </section>
@@ -120,17 +130,19 @@
       <section id="projects" class="card">
         <h2>Projects</h2>
 
-        <!-- CTF PROJECT -->
+        <!-- NEW CTF PROJECT -->
         <div class="project">
           <h3>SANS AWS Skills to Jobs CTF</h3>
           <p class="project-desc">
             <strong>2026 • Top 20 (Regional) / Top 300 Overall</strong>
           </p>
+
           <ul class="bullets">
-            <li>Competed in a multi-discipline cybersecurity CTF involving web security, investigation, and data analysis.</li>
-            <li>Used Burp Suite and Chrome DevTools to analyze HTTP traffic, authentication, and API behavior.</li>
-            <li>Performed enumeration and analyzed JavaScript and JSON responses to uncover hidden data and retrieve flags.</li>
+            <li>Competed in a multi-discipline cybersecurity Capture-the-Flag, solving challenges across web security, investigation, and data analysis.</li>
+            <li>Intercepted and analyzed HTTP requests using Burp Suite and browser developer tools to evaluate authentication, cookies, and API traffic.</li>
+            <li>Performed endpoint and directory enumeration in Kali Linux, analyzing JavaScript files and JSON API responses to uncover hidden functionality and retrieve flags.</li>
           </ul>
+
           <div class="project-links">
             <a class="link" href="SANS_CTF_Certificate.pdf" target="_blank">
               <i class="fa-solid fa-certificate"></i> Certificate
@@ -138,33 +150,131 @@
           </div>
         </div>
 
-        <!-- OTHER PROJECTS -->
+        <!-- ORIGINAL PROJECTS -->
         <div class="project">
-          <h3>Credential Abuse Detection</h3>
+          <h3>Credential Abuse Detection (Password Spraying)</h3>
+          <p class="project-desc"><strong>January 2026</strong></p>
           <ul class="bullets">
-            <li>Built Python system to detect password spraying attacks.</li>
-            <li>Generated realistic authentication logs and alerts.</li>
+            <li>Designed and implemented a Python-based detection system to identify password spraying attacks by correlating failed authentication attempts across multiple user accounts within a sliding time window.</li>
+            <li>Generated realistic authentication telemetry and simulated credential abuse scenarios to validate detection accuracy and reduce false positives.</li>
+            <li>Implemented threshold-based alerting using source IP, distinct usernames, failure count, and time correlation to produce SOC-style security alerts.</li>
           </ul>
+          <div class="project-links">
+            <a class="link" href="https://github.com/justinfuquen/credential-abuse-detection" target="_blank">
+              <i class="fa-brands fa-github"></i> Repository
+            </a>
+          </div>
+        </div>
+
+        <div class="project">
+          <h3>Murder Mystery Game</h3>
+          <p class="project-desc"><strong>June 2024</strong></p>
+          <ul class="bullets">
+            <li>Collaborated with a team of three to design and develop a murder mystery game using Unity and Visual Studio, with C# as the primary programming language.</li>
+            <li>Implemented interactive user interfaces including menus and buttons to enhance player engagement and usability.</li>
+            <li>Developed gameplay mechanics involving clues and deduction to identify the antagonist.</li>
+            <li>Strengthened proficiency in C#, Unity, and game design principles while refining debugging and problem-solving skills.</li>
+          </ul>
+          <div class="project-links">
+            <a class="link" href="https://github.com/dorelkalev/Murder-Mystery" target="_blank">
+              <i class="fa-brands fa-github"></i> Repository
+            </a>
+          </div>
+        </div>
+
+        <div class="project">
+          <h3>Vulnerability Enumeration & Exploitation Lab</h3>
+          <ul class="bullets">
+            <li>Built an isolated penetration testing lab using Kali Linux and Metasploitable 2 in VMware.</li>
+            <li>Performed network reconnaissance using Nmap to identify exposed services.</li>
+            <li>Enumerated web vulnerabilities using Nikto and phpMyAdmin.</li>
+            <li>Exploited PHP CGI argument injection via Metasploit.</li>
+            <li>Conducted SSH brute-force testing and upgraded shell access to Meterpreter.</li>
+          </ul>
+          <div class="project-links">
+            <a class="link" href="https://github.com/justinfuquen/vulnerability-enumeration-lab" target="_blank">
+              <i class="fa-brands fa-github"></i> Repository
+            </a>
+          </div>
+        </div>
+
+        <div class="project">
+          <h3>Web Development Labs (CSC 225)</h3>
+          <p class="project-desc">
+            Academic web development labs built using HTML and CSS, focusing on page structure,
+            navigation, responsive layouts, and clean styling.
+          </p>
+          <div class="project-links">
+            <a class="link" href="lab3.html">Lab 3</a>
+            <a class="link" href="lab4.html">Lab 4</a>
+            <a class="link" href="lab5.html">Lab 5</a>
+            <a class="link" href="lab6.html">Lab 6</a>
+            <a class="link" href="FinalProject.html">Final Project</a>
+          </div>
+          <div class="project-links" style="margin-top:12px;">
+            <a class="link" href="https://github.com/justinfuquen/justin102503.github.io" target="_blank">
+              <i class="fa-brands fa-github"></i> Website Repository
+            </a>
+          </div>
         </div>
 
       </section>
 
       <section id="skills" class="card">
         <h2>Skills</h2>
-        <div class="pill-row">
-          <span class="pill">Python</span>
-          <span class="pill">C++</span>
-          <span class="pill">Linux</span>
-          <span class="pill">Wireshark</span>
-          <span class="pill">Nmap</span>
-          <span class="pill">Splunk</span>
+
+        <div class="skill-group">
+          <h3>Systems & Networking</h3>
+          <div class="pill-row">
+            <span class="pill">Windows (Users & Services)</span>
+            <span class="pill">Windows Event Logs</span>
+            <span class="pill">Linux Fundamentals</span>
+            <span class="pill">TCP/IP</span>
+            <span class="pill">DNS</span>
+            <span class="pill">HTTP/HTTPS</span>
+            <span class="pill">Ports & Protocols</span>
+            <span class="pill">Firewall Concepts</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Programming / Scripting</h3>
+          <div class="pill-row">
+            <span class="pill">C++</span>
+            <span class="pill">Python</span>
+            <span class="pill">Java</span>
+            <span class="pill">PowerShell</span>
+            <span class="pill">HTML</span>
+            <span class="pill">CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Technologies</h3>
+          <div class="pill-row">
+            <span class="pill">Git/GitHub</span>
+            <span class="pill">KACE</span>
+            <span class="pill">Adobe Acrobat</span>
+            <span class="pill">Office 365</span>
+            <span class="pill">Google Suite</span>
+            <span class="pill">Splunk (SIEM)</span>
+            <span class="pill">VMware</span>
+            <span class="pill">Wireshark</span>
+            <span class="pill">Nmap</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Certifications</h3>
+          <div class="pill-row">
+            <span class="pill">Mastercard Cybersecurity Job Simulation (2024)</span>
+          </div>
         </div>
       </section>
 
       <footer class="footer">
         <p>© <span id="year"></span> Justin Fuquen</p>
       </footer>
-
     </section>
   </main>
 
